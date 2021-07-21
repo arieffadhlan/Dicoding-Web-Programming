@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid red;
+}
+
+.brand {
+	margin-left: 120px;
+}
+
+.navbar ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar ul li:not(:nth-last-child(1)) {
+	margin-right: 25px;
+}
+
+.navbar ul li:nth-last-child(1) {
+	margin-right: 120px;
+	padding: 2px;
+	background-color: #548ca8;
+	opacity: 0.8;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.navbar ul li:nth-last-child(1):hover {
+	opacity: 1;
+}
+
+.brand,
+.navbar ul li a:not(.kontak) {
+	color: #1f1f1f;
+}
+
+.kontak {
+	color: #f4f4f4;
+}
