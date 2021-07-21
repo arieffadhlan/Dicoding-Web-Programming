@@ -19,11 +19,16 @@ a {
 }
 
 header {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid red;
+	position: fixed;
+	margin-top: -50px;
+	padding: 10px 0;
+	background-color: #548ca8;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .brand {
@@ -41,8 +46,8 @@ header {
 
 .navbar ul li:nth-last-child(1) {
 	margin-right: 120px;
-	padding: 2px;
-	background-color: #548ca8;
+	/* padding: 0 5px; */
+	background-color: #334257;
 	opacity: 0.8;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -59,4 +64,34 @@ header {
 
 .kontak {
 	color: #f4f4f4;
+}
+
+.beranda {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	align-items: center;
+	margin-top: 50px;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	background-color: #548ca8;
+}
+
+.beranda-ilustrasi {
+	margin-top: 60px;
+}
+
+.beranda-ilustrasi img {
+	width: 50%;
+	margin-left: 120px;
+}
+
+.beranda-deskripsi h2,
+.beranda-deskripsi p {
+	margin-right: 150px;
+	margin-left: -100px;
+}
+
+.beranda-deskripsi h2 {
+	margin-bottom: 20px;
 }
