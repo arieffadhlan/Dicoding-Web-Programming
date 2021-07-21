@@ -18,6 +18,7 @@ a {
 	text-decoration: none;
 }
 
+/* Header */
 header {
 	width: 100%;
 	display: flex;
@@ -33,6 +34,10 @@ header {
 
 .brand {
 	margin-left: 120px;
+}
+
+.brand img {
+	width: 100px;
 }
 
 .navbar ul {
@@ -66,6 +71,7 @@ header {
 	color: #f4f4f4;
 }
 
+/* Beranda */
 .beranda {
 	display: flex;
 	flex-direction: row;
@@ -86,12 +92,52 @@ header {
 	margin-left: 120px;
 }
 
-.beranda-deskripsi h2,
+.beranda-deskripsi h1,
 .beranda-deskripsi p {
 	margin-right: 150px;
 	margin-left: -100px;
 }
 
-.beranda-deskripsi h2 {
-	margin-bottom: 20px;
+.beranda-deskripsi h1 {
+	margin-bottom: 10px;
+}
+
+/* Fitur */
+.fitur {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 120px;
+}
+
+.fitur-title {
+	margin-bottom: 50px;
+}
+
+.fitur-cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 55px;
+}
+
+.fitur-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.fitur-card img {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.fitur-card p {
+	width: 75%;
+	text-align: center;
+	margin-top: 10px;
 }
