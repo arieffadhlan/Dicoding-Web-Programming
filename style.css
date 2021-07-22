@@ -51,7 +51,7 @@ header {
 
 .navbar ul li:nth-last-child(1) {
 	margin-right: 120px;
-	/* padding: 0 5px; */
+	padding: 0 5px;
 	background-color: #334257;
 	opacity: 0.8;
 	border: 1px solid black;
@@ -67,7 +67,7 @@ header {
 	color: #1f1f1f;
 }
 
-.kontak {
+.contact {
 	color: #f4f4f4;
 }
 
@@ -78,27 +78,27 @@ header {
 	flex-grow: 1;
 	align-items: center;
 	margin-top: 50px;
-	padding-top: 80px;
-	padding-bottom: 120px;
+	padding-top: 135px;
+	padding-bottom: 145px;
 	background-color: #548ca8;
 }
 
-.beranda-ilustrasi {
+.beranda-illustration {
 	margin-top: 60px;
 }
 
-.beranda-ilustrasi img {
+.beranda-illustration img {
 	width: 50%;
 	margin-left: 120px;
 }
 
-.beranda-deskripsi h1,
-.beranda-deskripsi p {
+.beranda-description h1,
+.beranda-description p {
 	margin-right: 150px;
 	margin-left: -100px;
 }
 
-.beranda-deskripsi h1 {
+.beranda-description h1 {
 	margin-bottom: 10px;
 }
 
@@ -132,7 +132,7 @@ header {
 }
 
 .fitur-card img {
-	width: 50%;
+	width: 220px;
 	margin-bottom: 40px;
 }
 
@@ -140,4 +140,9 @@ header {
 	width: 75%;
 	text-align: center;
 	margin-top: 10px;
+}
+
+/* Tutor */
+.tutor-card-image {
+	width: 150px;
 }
