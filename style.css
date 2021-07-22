@@ -100,7 +100,7 @@ header {
 .beranda-illustration {
 	margin-top: 20px;
 	position: relative;
-	animation: 5s linear 1s infinite alternate mymove;
+	animation: 5s linear 1s infinite alternate upDown;
 }
 
 .beranda-illustration img {
@@ -120,7 +120,7 @@ header {
 }
 
 .beranda-description p {
-	opacity: 0.7;
+	opacity: 0.5;
 }
 
 /* Fitur */
@@ -138,11 +138,21 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 50px;
+	color: var(--main-text);
+}
+
+.fitur-title h2 {
+	border-bottom: 3px solid var(--secondary-components);
+}
+
+.fitur-title h3 {
+	opacity: 0.5;
 }
 
 .fitur-title-description {
-	width: 50%;
+	width: 60%;
 	margin-top: 10px;
+	font-weight: 500;
 	text-align: center;
 }
 
@@ -150,7 +160,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
 	margin-left: 55px;
 }
 
@@ -167,10 +177,16 @@ header {
 	margin-bottom: 40px;
 }
 
+.fitur-card h3,
+.fitur-card p {
+	color: var(--main-text);
+}
+
 .fitur-card p {
 	width: 75%;
 	text-align: center;
 	margin-top: 10px;
+	opacity: 0.5;
 }
 
 /* Tutor */
@@ -182,21 +198,33 @@ header {
 	margin-top: 120px;
 }
 
+.tutor-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	color: var(--main-text);
+}
+
+.tutor-title-description {
+	margin-top: 10px;
+	font-weight: 500;
+	opacity: 0.5;
+}
+
 .tutor-card {
 	padding: 20px;
 	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transform: translateY(5px);
 	transition: 0.5s;
 }
 
 .tutor-card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 5px 11px -1px rgba(0, 0, 0, 0.74);
 	transition: 0.5s;
-}
-
-.tutor-title {
-	margin-bottom: 40px;
 }
 
 .tutor-card-details {
@@ -217,8 +245,17 @@ header {
 	border-radius: 20px;
 }
 
+.tutor-card-name,
+.tutor-card-description {
+	color: var(--main-text);
+}
+
 .tutor-card-name {
 	margin-bottom: 5px;
+}
+
+.tutor-card-description {
+	opacity: 0.5;
 }
 
 /* Footer */
@@ -230,9 +267,10 @@ footer {
 	margin-top: 120px;
 	padding-bottom: 25px;
 	background-color: var(--main-components);
+	color: var(--tertiary-text);
 }
 
-@keyframes mymove {
+@keyframes upDown {
 	0% {
 		bottom: 0px;
 	}
@@ -255,5 +293,22 @@ footer {
 
 	.beranda-description h1 {
 		font-size: 2.5rem;
+	}
+
+	.fitur-cards {
+		flex-wrap: wrap;
+		margin-left: 0;
+	}
+
+	.fitur-card {
+		width: 50%;
+	}
+
+	.fitur-card p {
+		width: 75%;
+	}
+
+	.fitur-card:nth-last-child(1) {
+		margin-top: 70px;
 	}
 }
