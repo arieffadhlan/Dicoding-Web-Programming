@@ -17,3 +17,15 @@ fiturCard.forEach(function (card) {
 		card.style.transition = "0.5s";
 	});
 });
+
+// const navbarlinks = document.querySelectorAll(".navbar-link");
+
+document.querySelectorAll(".navbar-link").forEach((anchor) => {
+	anchor.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		document.querySelector(this.getAttribute("href")).scrollIntoView({
+			behavior: "smooth",
+		});
+	});
+});

@@ -71,26 +71,29 @@ header {
 	opacity: 1;
 }
 
-.brand,
 .navbar ul li a:not(.contact) {
-	color: var(--secondary-text);
+	color: var(--tertiary-text);
 	font-weight: 700;
+	opacity: 0.8;
+}
+
+.navbar ul li a:not(.contact):hover {
+	opacity: 1;
 }
 
 .contact {
 	color: var(--tertiary-text);
-	font-weight: 500;
+	font-weight: 600;
 }
 
 /* Beranda */
 .beranda {
 	display: flex;
 	flex-direction: row;
-	flex-grow: 1;
 	align-items: center;
 	margin-top: 50px;
-	padding-top: 185px;
-	padding-bottom: 195px;
+	padding-top: 195px;
+	padding-bottom: 215px;
 	background-color: var(--main-components);
 }
 
@@ -107,8 +110,7 @@ header {
 
 .beranda-description h1,
 .beranda-description p {
-	margin-right: 150px;
-	margin-left: -100px;
+	margin-right: 120px;
 	color: var(--tertiary-text);
 }
 
@@ -241,5 +243,17 @@ footer {
 
 	100% {
 		bottom: 0px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.99px) {
+	.beranda-description h1,
+	.beranda-description p {
+		margin-right: 120px;
+		margin-left: 0px;
+	}
+
+	.beranda-description h1 {
+		font-size: 2.5rem;
 	}
 }
