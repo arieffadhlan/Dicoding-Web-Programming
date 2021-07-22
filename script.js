@@ -5,7 +5,7 @@ fiturCard.forEach(function (card) {
 		const fiturImage = card.querySelector("img");
 		fiturImage.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
 		fiturImage.style.transition = "0.5s";
-		card.style.transform = "translateY(-10px)";
+		card.style.transform = "translateY(-5px)";
 		card.style.transition = "0.5s";
 	});
 
@@ -13,7 +13,7 @@ fiturCard.forEach(function (card) {
 		const fiturImage = card.querySelector("img");
 		fiturImage.style.boxShadow = "none";
 		fiturImage.style.transition = "0.5s";
-		card.style.transform = "translateY(10px)";
+		card.style.transform = "translateY(5px)";
 		card.style.transition = "0.5s";
 	});
 });
