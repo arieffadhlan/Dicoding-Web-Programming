@@ -208,6 +208,7 @@ header {
 
 .tutor-title-description {
 	margin-top: 10px;
+	text-align: center;
 	font-weight: 500;
 	opacity: 0.5;
 }
@@ -257,6 +258,55 @@ header {
 	opacity: 0.5;
 }
 
+/* Contact */
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 120px;
+}
+
+.contact-title {
+	margin-bottom: 50px;
+	color: var(--main-text);
+}
+
+.contact-form,
+.contact-form-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-form-input {
+	margin-bottom: 25px;
+}
+
+.contact-form-input label {
+	margin-bottom: 10px;
+	color: var(--main-text);
+}
+
+input[type="text"],
+input[type="email"] {
+	padding: 10px;
+	border: 0.5px solid black;
+	border-radius: 20px;
+	color: var(--main-text);
+}
+
+input[type="text"],
+input[type="email"],
+textarea:focus {
+	outline: 0px;
+}
+
+textarea {
+	padding: 10px;
+}
+
 /* Footer */
 footer {
 	display: flex;
@@ -286,7 +336,7 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1023.99px) {
 	.beranda-description h1,
 	.beranda-description p {
-		margin-right: 120px;
+		margin-right: 0px;
 		margin-left: 0px;
 	}
 
@@ -312,7 +362,11 @@ footer {
 	}
 }
 
-@media screen and (min-width: 540px) and (max-width: 767.99px) {
+@media screen and (max-width: 767.99px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+
 	/* Navbar */
 	.brand {
 		margin-left: 55px;
@@ -370,7 +424,7 @@ footer {
 		margin-right: 0;
 	}
 
-	.beranda-description,
+	.beranda-description h1,
 	.beranda-description p {
 		width: 80%;
 		text-align: center;
@@ -390,7 +444,39 @@ footer {
 		margin-top: 70px;
 	}
 
-	.fitur-card p {
+	.fitur-card p,
+	.tutor-title-description {
 		width: 70%;
+	}
+
+	/* Footer */
+	footer {
+		margin-bottom: 63px;
+	}
+}
+
+@media screen and (max-width: 425.99px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Navbar */
+	.brand {
+		margin-left: 20px;
+	}
+
+	/* Beranda */
+	.beranda-description h1,
+	.beranda-description p {
+		width: 75%;
+	}
+
+	.beranda-description h1 {
+		font-size: 1.8rem;
+	}
+
+	/* Contact */
+	textarea {
+		width: 75%;
 	}
 }
