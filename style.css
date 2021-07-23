@@ -108,14 +108,17 @@ header {
 	margin-left: 120px;
 }
 
+.beranda-description {
+	margin-right: 120px;
+}
+
 .beranda-description h1,
 .beranda-description p {
-	margin-right: 120px;
 	color: var(--tertiary-text);
 }
 
 .beranda-description h1 {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-size: 3rem;
 }
 
@@ -205,6 +208,10 @@ header {
 	align-items: center;
 	margin-bottom: 50px;
 	color: var(--main-text);
+}
+
+.tutor-title h2 {
+	border-bottom: 3px solid var(--secondary-components);
 }
 
 .tutor-title-description {
@@ -310,5 +317,61 @@ footer {
 
 	.fitur-card:nth-last-child(1) {
 		margin-top: 70px;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 767.99px) {
+	.brand {
+		margin-left: 55px;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.beranda,
+	.fitur-cards {
+		flex-direction: column;
+	}
+
+	.beranda-illustration {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+
+	.beranda-illustration img {
+		margin-left: 0;
+	}
+
+	.beranda-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0;
+	}
+
+	.beranda-description,
+	.beranda-description p {
+		width: 80%;
+		text-align: center;
+	}
+
+	.beranda-description h1 {
+		font-size: 2rem;
+	}
+
+	.fitur-cards {
+		margin-left: 0;
+		align-items: center;
+	}
+
+	.fitur-card:not(:nth-child(1)) {
+		margin-top: 70px;
+	}
+
+	.fitur-card p {
+		width: 70%;
 	}
 }

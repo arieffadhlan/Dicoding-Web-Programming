@@ -18,8 +18,6 @@ fiturCard.forEach(function (card) {
 	});
 });
 
-// const navbarlinks = document.querySelectorAll(".navbar-link");
-
 document.querySelectorAll(".navbar-link").forEach((anchor) => {
 	anchor.addEventListener("click", function (e) {
 		e.preventDefault();
